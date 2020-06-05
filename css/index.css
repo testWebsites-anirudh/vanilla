@@ -344,7 +344,7 @@ body .overlay {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: absolute;
+    position: fixed;
     right: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -383,6 +383,11 @@ body .overlay {
     margin: 5px 0;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+  }
+  body .header .burger-active {
+    position: fixed;
+    top: 25px;
+    right: 40px;
   }
   body .header .burger-active .line1 {
     -webkit-transform: rotate(45deg) translate(5px, 5px);
