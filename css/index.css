@@ -35,6 +35,7 @@ body .intro {
 body .intro .name {
   margin-bottom: 15px;
   font-size: 48px;
+  text-align: center;
 }
 
 body .intro .line {
@@ -48,6 +49,7 @@ body .intro .slogan {
   font-weight: normal;
   font-size: 32px;
   margin-top: 5px;
+  text-align: center;
 }
 
 body .landing {
@@ -72,6 +74,7 @@ body .landing {
 body .landing .italic-name {
   font-family: 'Marck Script', cursive;
   font-size: 40px;
+  text-align: center;
 }
 
 body .landing .line {
@@ -80,17 +83,20 @@ body .landing .line {
   margin: 0 auto;
   background-color: #000;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 body .landing .info {
   font-size: 48px;
   font-weight: 500;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 body .landing .info-2 {
   font-weight: 300;
   font-size: 26px;
+  text-align: center;
 }
 
 body .landing h2 {
@@ -98,6 +104,7 @@ body .landing h2 {
   position: absolute;
   bottom: 80px;
   cursor: pointer;
+  text-align: center;
   text-decoration: underline;
 }
 
@@ -294,5 +301,190 @@ body .links .yt {
 body footer {
   text-align: center;
   margin-bottom: 15px;
+}
+
+body .burger {
+  display: none;
+}
+
+body .overlay {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  body .header nav a {
+    font-size: small;
+  }
+  body .links {
+    width: 50px;
+  }
+  body .ig, body .tw {
+    width: 90%;
+  }
+  body .yt {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+    top: 0;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+  }
+  body .header nav a {
+    margin: 40px auto;
+    color: #fff;
+    font-size: medium;
+  }
+  body .header .nav-active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+  }
+  body .header .burger {
+    display: block;
+    z-index: 3;
+    cursor: pointer;
+  }
+  body .header .burger .line1, body .header .burger .line2, body .header .burger .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  body .header .burger-active .line1 {
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+            transform: rotate(45deg) translate(5px, 5px);
+  }
+  body .header .burger-active .line2 {
+    opacity: 0;
+  }
+  body .header .burger-active .line3 {
+    -webkit-transform: rotate(-45deg) translate(6px, -6px);
+            transform: rotate(-45deg) translate(6px, -6px);
+  }
+  body .overlay-active {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  body .landing .italic-name {
+    font-size: 32px;
+  }
+  body .landing .info {
+    font-size: 32px;
+  }
+  body .landing .info-2 {
+    font-size: 20px;
+  }
+  body footer {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  body .cards .card {
+    width: 60%;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 536px) {
+  body .landing h2 {
+    font-size: 18px;
+  }
+  body .cards .card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body .intro .name {
+    font-size: 22px;
+  }
+  body .intro .slogan {
+    font-size: 18px;
+  }
+  body .landing .italic-name {
+    font-size: 26px;
+    text-align: center;
+  }
+  body .landing .info {
+    font-size: 22px;
+    text-align: center;
+  }
+  body .cards .card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body .intro .name {
+    font-size: 30px;
+  }
+  body .intro .line {
+    width: 50%;
+  }
+  body .intro .slogan {
+    font-size: 24px;
+  }
+  body .landing .info {
+    font-size: 26px;
+  }
+  body .landing .line {
+    width: 50%;
+  }
+  body .landing .info-2 {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
