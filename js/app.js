@@ -1,4 +1,3 @@
-
 function navSlide(){
 
     const burger = document.querySelector('.burger');
@@ -9,6 +8,7 @@ function navSlide(){
 
         overlay.classList.toggle('overlay-active');
         burger.classList.toggle('burger-active');
+        
         nav.classList.toggle('nav-active');
 
         
