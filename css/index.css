@@ -363,6 +363,7 @@ body .overlay {
     margin: 40px auto;
     color: #fff;
     font-size: medium;
+    text-align: center;
   }
   body .header .nav-active {
     -webkit-transform: translateX(0);
