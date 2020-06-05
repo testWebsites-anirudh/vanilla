@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+body .intro {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .intro .name {
+  margin-bottom: 15px;
+  font-size: 48px;
+}
+
+body .intro .line {
+  height: 1px;
+  width: 20%;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+body .intro .slogan {
+  font-weight: normal;
+  font-size: 32px;
+  margin-top: 5px;
+}
+
+body .landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .landing .italic-name {
+  font-family: 'Marck Script', cursive;
+  font-size: 40px;
+}
+
+body .landing .line {
+  height: 1px;
+  width: 20%;
+  margin: 0 auto;
+  background-color: #000;
+  margin-bottom: 20px;
+}
+
+body .landing .info {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+body .landing .info-2 {
+  font-weight: 300;
+  font-size: 26px;
+}
+
+body .landing h2 {
+  font-weight: 400;
+  position: absolute;
+  bottom: 80px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+body .landing .arrow-down {
+  height: 20px;
+  width: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  bottom: 55px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+body .cards {
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .cards .card {
+  width: 30%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px #000;
+          box-shadow: 0 0 15px #000;
+  border: 1px solid white;
+}
+
+body .cards .card h2, body .cards .card p {
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+body .cards .card h2 {
+  width: 90%;
+  margin: 0px auto 10px auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+body .cards .card p {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+body .cards .card1 {
+  background-image: url("../images/card1.png");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .cards .card2 {
+  background-image: url("../images/card2.png");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .cards .card3 {
+  background-image: url("../images/card3.png");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .header {
+  width: 90%;
+  margin: 10px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header .icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .header .icon img {
+  width: 55px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+body .header nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+body .header nav .a-active {
+  background-color: #000;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+body .links {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65px;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+}
+
+body .links img {
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+body .links .ig {
+  width: 70%;
+}
+
+body .links .tw {
+  width: 70%;
+}
+
+body .links .yt {
+  width: 60%;
+}
+
+body footer {
+  text-align: center;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=index.css.map */
